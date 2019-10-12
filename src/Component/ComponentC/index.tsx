@@ -1,24 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AppContext, ChannelContext } from "../../App";
 
-const ComponentC = (props) => {
+const ComponentC = () => {
+    const {componentName: componentApp} = useContext(AppContext);
+    const {componentName: componentChannel} = useContext(ChannelContext);
+    
     return (
-        <AppContext.Consumer>
-            {
-                appData => (
-                    <ChannelContext.Consumer>
-                        {
-                            channelData => (
-                                 <div>
-                                     <p>App Component Data: {appData.componentName}</p>
-                                     <p>Channel Component Data: {channelData.componentName}</p>
-                                 </div>
-                            )
-                        }
-                    </ChannelContext.Consumer>
-                )
-            }
-        </AppContext.Consumer>
+        <div>
+            <p>App Context: { componentApp }</p>
+            <p>Channel Context: { componentChannel }</p>
+        </div>
     )
 };
 

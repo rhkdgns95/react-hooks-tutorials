@@ -18,6 +18,7 @@ interface IProps {
 
 export const AppContext: React.Context<IProps> = React.createContext<IProps>({componentName: "APP"});
 export const ChannelContext: React.Context<IProps> = React.createContext<IProps>({componentName: "Channel"})
+
 const App =  () => {
   const value = {
     componentName: "hel",
