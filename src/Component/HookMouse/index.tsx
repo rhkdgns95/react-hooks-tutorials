@@ -19,6 +19,12 @@ const useFetch = () => {
     useEffect(() => {
         console.log("useEffect Called - Add MouseEvent");
         window.addEventListener('mousemove', handleMouseMove);
+        
+        // Cleanup useEffect.
+        return () => {
+            console.log('Component unmounting code');
+            window.removeEventListener('mousemove', handleMouseMove);
+        }
     }, [])
 
     useEffect(() => {
