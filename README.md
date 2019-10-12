@@ -16,3 +16,9 @@ Call them from within React functional components and not just any regular Javas
 - New state value depends on the previous state value? You can pass a function to the setter funciton.
 - when dealing with Objects or arrays, always make sure to spread your state variable and then call the setter function
 
+---
+
+### useEffect
+- The Effect Hook lets you perform side effects in functional components
+- It is a close replacement for componentDidMount, componentDidUpdate, componentWillUnmount.
+: componentDidMount -> componentDidUpdate -> componentWillUnmount
