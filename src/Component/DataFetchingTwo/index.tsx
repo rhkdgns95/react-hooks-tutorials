@@ -20,11 +20,29 @@ const InitPost: IPost = {
 const useFetching = (initId: number) => {
     const [id, setId] = useState<number>(initId);
     const [post, setPost] = useState<IPost>(InitPost);
+    const [idFromButtonClick , setIdFromButtonClick] = useState(1);
 
     const onChange: React.ChangeEventHandler<HTMLInputElement> = (event) => {
         const { target: { name, value }} = event;
-        setId(value === "" ? 1 : parseInt(value));
+        if(parseInt(value) > 100) {
+            alert("최대 100이하 숫자를 입력해주세요.")
+            setId(100);
+        } else if(parseInt(value) < 1 || value === "") {
+            alert("최소 1이상 숫자를 입력해주세요.")
+            setId(1);
+        } else {
+            setId(parseInt(value));
+        }
     }
+    
+    const handleClick = () => {
+        if(id <= 0 || id > 100) {
+            alert("에러");
+            return;
+        }
+        setIdFromButtonClick(id);
+    }
+
     const getPost = async (): Promise<void> => {
         const newUrl: string = `${URL}/${id}`;
         try {
@@ -36,16 +54,18 @@ const useFetching = (initId: number) => {
     }
     useEffect(() => {
         getPost();
-    }, [id]);
+    }, [idFromButtonClick]);
+    
     return {
         id,
         post,
-        onChange
+        onChange,
+        handleClick
     }
 };
 
 const DataFetchingTwo = () => {
-    const { id: postId, post, onChange} = useFetching(1);
+    const { id: postId, post, onChange , handleClick } = useFetching(1);
     const { userId, id, body, title } = post;
     return (
         <div>
@@ -56,6 +76,9 @@ const DataFetchingTwo = () => {
                 <li>title: { title }</li>
                 <li>body: { body }</li>
             </ul>
+            {
+                 (postId >= 1 || postId <= 100) && <button onClick={e => handleClick()}>Submit</button>
+            }
         </div>
     )
 };
