@@ -7,7 +7,8 @@ import HookCounterOne from "./Component/HookCounterOne";
 import HookMouse from "./Component/HookMouse";
 import MouseContainer from "./Component/MouseContainer";
 import IntervalHookCounter from "./Component/IntervalHookCounter";
+import IntervalHookCounterTwo from "./Component/IntervalHookCounterTwo";
 
-const App =  () => <IntervalHookCounter />;
+const App =  () => <IntervalHookCounterTwo />;
 
 export default App;
