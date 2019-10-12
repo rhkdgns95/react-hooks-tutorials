@@ -22,3 +22,7 @@ Call them from within React functional components and not just any regular Javas
 - The Effect Hook lets you perform side effects in functional components
 - It is a close replacement for componentDidMount, componentDidUpdate, componentWillUnmount.
 : componentDidMount -> componentDidUpdate -> componentWillUnmount
+
+### Context
+- Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
