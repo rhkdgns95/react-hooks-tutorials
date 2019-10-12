@@ -1,14 +1,15 @@
 import React, { useContext } from "react";
-import { AppContext, ChannelContext } from "../../App";
+import ComponentE from "../ComponentE";
+import ComponentF from "../ComponentF";
 
 const ComponentC = () => {
-    const {componentName: componentApp} = useContext(AppContext);
-    const {componentName: componentChannel} = useContext(ChannelContext);
-    
     return (
         <div>
-            <p>App Context: { componentApp }</p>
-            <p>Channel Context: { componentChannel }</p>
+            <h1>ComponentE</h1>
+            <ComponentE/>
+            <hr />
+            <h1>ComponentF</h1>
+            <ComponentF />
         </div>
     )
 };
