@@ -9,7 +9,8 @@ import MouseContainer from "./Component/MouseContainer";
 import IntervalHookCounter from "./Component/IntervalHookCounter";
 import IntervalHookCounterTwo from "./Component/IntervalHookCounterTwo";
 import DataFetching from "./Component/DataFetching";
+import DataFetchingTwo from "./Component/DataFetchingTwo";
 
-const App =  () => <DataFetching />;
+const App =  () => <DataFetchingTwo />;
 
 export default App;
