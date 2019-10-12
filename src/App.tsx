@@ -1,6 +1,7 @@
 import React from "react";
-import HomeCounter from "./Component/HookCounter";
+import HookCounter from "./Component/HookCounter";
+import HookCounterTwo from "./Component/HookCounterTwo";
 
-const App =  () => <HomeCounter />;
+const App =  () => <HookCounterTwo />;
 
 export default App;
