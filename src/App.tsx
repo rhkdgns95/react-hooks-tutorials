@@ -23,10 +23,11 @@ import CalculatorComponentC from "./Component/CalculatorComponentC";
 import DataFetchingOne from "./Component/DataFetchingOne";
 import DataFetchingTwo2 from "./Component/DataFetchingTwo2";
 import ParentComponent from "./Component/ParentComponent";
+import MemoCount from "./Component/MemoCount";
 
 const App =  () => {
   return ( 
-    <ParentComponent/>
+    <MemoCount/>
   )
 };
 
