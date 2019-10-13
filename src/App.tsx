@@ -14,10 +14,11 @@ import ComponentC from "./Component/ComponentC";
 import AppProvider from "./Provider/AppProvider";
 import ChannelProvider from "./Provider/ChannelProvider";
 import CounterOne from "./Component/CounterOne";
+import CounterTwo from "./Component/CounterTwo";
 
 const App =  () => {
   return ( 
-    <CounterOne />
+    <CounterTwo />
   )
 };
 
