@@ -20,15 +20,11 @@ import CalculatorProvider from "./Provider/CalculatorProvider";
 import CalculatorComponentA from "./Component/CalculatorComponentA";
 import CalculatorComponentB from "./Component/CalculatorComponentB";
 import CalculatorComponentC from "./Component/CalculatorComponentC";
+import DataFetchingOne from "./Component/DataFetchingOne";
 
 const App =  () => {
   return ( 
-    <CalculatorProvider>
-      <h1>- App Component -</h1>
-      <CalculatorComponentA/>
-      <CalculatorComponentB/>
-      <CalculatorComponentC/>
-    </CalculatorProvider>
+    <DataFetchingOne/>
   )
 };
 
