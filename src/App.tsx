@@ -21,10 +21,11 @@ import CalculatorComponentA from "./Component/CalculatorComponentA";
 import CalculatorComponentB from "./Component/CalculatorComponentB";
 import CalculatorComponentC from "./Component/CalculatorComponentC";
 import DataFetchingOne from "./Component/DataFetchingOne";
+import DataFetchingTwo2 from "./Component/DataFetchingTwo2";
 
 const App =  () => {
   return ( 
-    <DataFetchingOne/>
+    <DataFetchingTwo2/>
   )
 };
 
