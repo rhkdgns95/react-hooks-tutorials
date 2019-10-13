@@ -30,13 +30,11 @@ import DocTitleOne from "./Component/DocTitleOne";
 import DocTitleTwo from "./Component/DocTitleTwo";
 import CustomCounterOne from "./Component/CustomCounterOne";
 import CustomCounterTwo from "./Component/CustomCounterTwo";
+import UserForm from "./Component/UserForm";
 
 const App =  () => {
   return ( 
-    <div>
-      <CustomCounterOne />
-      <CustomCounterTwo />
-    </div>
+    <UserForm />
   )
 };
 
