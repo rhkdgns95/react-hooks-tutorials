@@ -28,12 +28,14 @@ import FocusInput from "./Component/FocusInput";
 import HookTimer from "./Component/HookTimer";
 import DocTitleOne from "./Component/DocTitleOne";
 import DocTitleTwo from "./Component/DocTitleTwo";
+import CustomCounterOne from "./Component/CustomCounterOne";
+import CustomCounterTwo from "./Component/CustomCounterTwo";
 
 const App =  () => {
   return ( 
     <div>
-      <DocTitleOne/>
-      <DocTitleTwo/>
+      <CustomCounterOne />
+      <CustomCounterTwo />
     </div>
   )
 };
