@@ -22,10 +22,11 @@ import CalculatorComponentB from "./Component/CalculatorComponentB";
 import CalculatorComponentC from "./Component/CalculatorComponentC";
 import DataFetchingOne from "./Component/DataFetchingOne";
 import DataFetchingTwo2 from "./Component/DataFetchingTwo2";
+import ParentComponent from "./Component/ParentComponent";
 
 const App =  () => {
   return ( 
-    <DataFetchingTwo2/>
+    <ParentComponent/>
   )
 };
 

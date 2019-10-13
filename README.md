@@ -61,4 +61,28 @@ Call them from within React functional components and not just any regular Javas
 - Share state between components - Global state management.
 - useRedcuer + useContext
 
+### useState vs useReducer
+- Scenario
+1. Type of state.
+  [useState]: Number, String, Boolean
+  [useReducer]: Object or Array
+2. Number of state transitions.
+  [useState]: One or Two
+  [useReducer]: Too many
+3. Related state transitions.
+  [useState]: No 
+  [useReducer]: Yes 
+4. Business logic
+  [useState]: No business logic
+  [useReducer]: Complex business logic
+5. Local vs Global
+  [useState]: Local 
+  [useReducer]: Global 
 
+
+### useCallback Hook
+- What?
+: useCallback is a hook that will return a memoized version of the callback function that only changes if one of the dependencies has changed.
+- Why?
+: It is useful when passing callbacks to optimized child component that rely on reference equality to prevent unnecessary renders.
+ 
