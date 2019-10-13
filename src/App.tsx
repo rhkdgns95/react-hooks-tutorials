@@ -15,10 +15,11 @@ import AppProvider from "./Provider/AppProvider";
 import ChannelProvider from "./Provider/ChannelProvider";
 import CounterOne from "./Component/CounterOne";
 import CounterTwo from "./Component/CounterTwo";
+import CounterThree from "./Component/CounterThree";
 
 const App =  () => {
   return ( 
-    <CounterTwo />
+    <CounterThree />
   )
 };
 
