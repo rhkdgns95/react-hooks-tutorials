@@ -56,3 +56,9 @@ Call them from within React functional components and not just any regular Javas
 - useReducer(reducer, initialState)
 - reducer(currentState, action)
 
+### useReducer with useContext
+- useRedcuer - Local state management.
+- Share state between components - Global state management.
+- useRedcuer + useContext
+
+

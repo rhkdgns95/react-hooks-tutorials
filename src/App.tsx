@@ -16,10 +16,19 @@ import ChannelProvider from "./Provider/ChannelProvider";
 import CounterOne from "./Component/CounterOne";
 import CounterTwo from "./Component/CounterTwo";
 import CounterThree from "./Component/CounterThree";
+import CalculatorProvider from "./Provider/CalculatorProvider";
+import CalculatorComponentA from "./Component/CalculatorComponentA";
+import CalculatorComponentB from "./Component/CalculatorComponentB";
+import CalculatorComponentC from "./Component/CalculatorComponentC";
 
 const App =  () => {
   return ( 
-    <CounterThree />
+    <CalculatorProvider>
+      <h1>- App Component -</h1>
+      <CalculatorComponentA/>
+      <CalculatorComponentB/>
+      <CalculatorComponentC/>
+    </CalculatorProvider>
   )
 };
 
