@@ -13,14 +13,11 @@ import DataFetchingTwo from "./Component/DataFetchingTwo";
 import ComponentC from "./Component/ComponentC";
 import AppProvider from "./Provider/AppProvider";
 import ChannelProvider from "./Provider/ChannelProvider";
+import CounterOne from "./Component/CounterOne";
 
 const App =  () => {
   return ( 
-    <AppProvider>
-      <ChannelProvider>
-        <ComponentC />
-      </ChannelProvider>
-    </AppProvider>
+    <CounterOne />
   )
 };
 
