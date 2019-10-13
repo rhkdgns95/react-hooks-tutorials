@@ -26,10 +26,15 @@ import ParentComponent from "./Component/ParentComponent";
 import MemoCount from "./Component/MemoCount";
 import FocusInput from "./Component/FocusInput";
 import HookTimer from "./Component/HookTimer";
+import DocTitleOne from "./Component/DocTitleOne";
+import DocTitleTwo from "./Component/DocTitleTwo";
 
 const App =  () => {
   return ( 
-    <HookTimer />
+    <div>
+      <DocTitleOne/>
+      <DocTitleTwo/>
+    </div>
   )
 };
 

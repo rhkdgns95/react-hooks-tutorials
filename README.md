@@ -85,4 +85,21 @@ Call them from within React functional components and not just any regular Javas
 : useCallback is a hook that will return a memoized version of the callback function that only changes if one of the dependencies has changed.
 - Why?
 : It is useful when passing callbacks to optimized child component that rely on reference equality to prevent unnecessary renders.
- 
+
+
+## Hook so far
+- useState
+- useEffect
+- useContext
+- useReducer
+- useCallback
+- useMemo
+- useRef
+
+### Custom Hooks
+- A custom hook is basically Javascript function whose name starts with "use".
+- A custom hook can also call other Hooks if required.
+- Why?
+: Share logic - Alternative HOCs and Render Props.
+- How to create custom hooks?
+
